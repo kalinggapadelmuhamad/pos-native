@@ -1,0 +1,91 @@
+* {
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #e4e5e6;
+  color: #293b5f;
+  font-size: 14px !important;
+  height: 100vh !important;
+}
+
+.bgMain {
+  background-color: #22c55e;
+  /* background:linear-gradient( rgba(34,197,94, 0.9), rgba(129, 127, 127, 0) ),url('../img/logo/logo.png'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.btnMain {
+  background-color: #22c55e;
+  color: #fff;
+  font-size: 12px;
+}
+
+.btnMain:hover {
+    background-color: #1eaa51;
+    color: #fff;
+    font-size: 12px;
+  }
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #c8ced3;
+  background-color: #fff;
+  height: 45px;
+}
+
+.navbar .navbar-brand {
+  color: #293b5f;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.navbar .text-brand {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.login {
+  max-width: 580px;
+  font-weight: 400;
+  margin: 13% 0;
+}
+
+.login .container {
+  background-color: #fff;
+}
+
+.login .logoForm {
+  margin-bottom: -3px;
+  font-size: 21px;
+  color: #293b5f;
+}
+
+.login .descForm {
+  font-size: 12px;
+  font-weight: 300;
+  color: #293b5f;
+}
+
+.login input {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.login .input-group-text {
+  color: #293b5f !important;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+@media (max-width: 767px) {
+  .login {
+    padding: 0 13px;
+    margin: 68% 0;
+    border: 0.5px #c8ced3;
+  }
+}
