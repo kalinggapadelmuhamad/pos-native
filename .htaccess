@@ -1,0 +1,33 @@
+DirectoryIndex index.php
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^login$  login.php [L]
+RewriteRule ^logout$ app/models/auth/logout.php [L]
+
+RewriteRule ^dashboard$              index.php [L]
+RewriteRule ^dashboard/$             index.php?page= [L]
+RewriteRule ^dashboard/home$         index.php?page=home [L]
+
+RewriteRule ^dashboard/profile$      index.php?page=profile [L]
+
+RewriteRule ^dashboard/employes$     index.php?page=employes [L]
+RewriteRule ^dashboard/employes/delete/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ index.php?page=employes&table=$1&id=$2 [L]
+
+RewriteRule ^dashboard/suppliers$    index.php?page=suppliers [L]
+RewriteRule ^dashboard/suppliers/delete/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ index.php?page=suppliers&table=$1&id=$2 [L]
+
+RewriteRule ^dashboard/categories$   index.php?page=categories [L]
+RewriteRule ^dashboard/categories/delete/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ index.php?page=categories&table=$1&id=$2 [L]
+
+RewriteRule ^dashboard/items$        index.php?page=items [L]
+RewriteRule ^dashboard/items/delete/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ index.php?page=items&table=$1&id=$2 [L]
+
+RewriteRule ^dashboard/stock$        index.php?page=stock [L]
+
+RewriteRule ^dashboard/sales$        index.php?page=sales [L]
+RewriteRule ^dashboard/sales/delete/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ index.php?page=sales&table=$1&id=$2&idItems=$3&qty=$4 [L]
+
+RewriteRule ^dashboard/salesreport$  index.php?page=salesreport [L]
+RewriteRule ^dashboard/salesreport/delete/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ index.php?page=salesreport&table=$1&id=$2&idInv=$3 [L]
